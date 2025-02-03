@@ -180,3 +180,24 @@ li .js-done img {
         font-size: 1.5rem;
     }
 }
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    li .task-content {
+        font-size: 0.9rem;
+    }
+
+    form input[type="text"] {
+        font-size: 0.9rem;
+    }
+
+    li .js-done,
+    li .js-remove {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+}
