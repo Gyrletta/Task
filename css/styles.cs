@@ -130,3 +130,15 @@ li .js-done img {
     width: 20px;
     height: 20px;
 }
+
+
+.input-error {
+    border: 1px solid gray;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);
+}
+
+.input-error:focus {
+    outline: none;
+    border: 1px solid #999;
+}
