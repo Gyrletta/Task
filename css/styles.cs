@@ -70,3 +70,63 @@ form button {
 form button:hover {
     background-color: #218838;
 }
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+li .task-content {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+li .js-done,
+li .js-remove {
+    width: 30px;
+    height: 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+li .js-done {
+    background-color: #28a745;
+}
+
+li .js-done:hover {
+    background-color: #218838;
+}
+
+li .js-remove {
+    background-color: red;
+}
+
+li .js-remove:hover {
+    background-color: darkred;
+}
+
+li .js-remove img,
+li .js-done img {
+    width: 20px;
+    height: 20px;
+}
