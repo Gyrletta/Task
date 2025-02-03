@@ -142,3 +142,41 @@ li .js-done img {
     outline: none;
     border: 1px solid #999;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    form input[type="text"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    li .js-done,
+    li .js-remove {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
