@@ -54,8 +54,8 @@
             htmlString += `
             <li${task.done ? " style=\"text-decoration: line-through\"" : ""}>
                 ${task.content}
-                <button class="js-done"> Zrobione?</button>
-                <button class="js-remove">Usuń</button>
+                <button class="js-done"> ✅</button>
+                <button class="js-remove">🗑️</button>
             </li>
             `;
         }
@@ -66,18 +66,22 @@
     };
 
     
-
     const onFormSubmit = (event) => {
         event.preventDefault();
-
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
-        
-        if(newTaskContent === "") {
+    
+        const newTaskInput = document.querySelector(".js-newTask");
+        const newTaskContent = newTaskInput.value.trim();
+    
+        if (newTaskContent === "") {
+            newTaskInput.classList.add("input-error"); 
             return;
         }
-
+    
+        newTaskInput.classList.remove("input-error"); 
         addNewTask(newTaskContent);
+        newTaskInput.value = "";
     };
+
 
     const init = () => {
         render();
