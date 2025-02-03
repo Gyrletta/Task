@@ -56,3 +56,17 @@ form input[type="text"]:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
 }
+
+
+form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
