@@ -111,8 +111,8 @@ li .js-remove {
 
 li .js-done {
     background-color: #28a745;
-    justify-content: flex-start;
     margin-right: 10px;
+    order: -1;
 }
 
 li .js-done:hover {
@@ -121,6 +121,7 @@ li .js-done:hover {
 
 li .js-remove {
     background-color: red;
+    order: 1;
 }
 
 li .js-remove:hover {
