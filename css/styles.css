@@ -43,7 +43,7 @@ form {
     margin-bottom: 20px;
 }
 
-form input[type="text"] {
+form .js-newTask {
     flex-grow: 1;
     padding: 10px;
     border: 1px solid #ddd;
@@ -51,7 +51,7 @@ form input[type="text"] {
     margin-right: 10px;
 }
 
-form input[type="text"]:focus {
+form .js-newTask:focus {
     border-color: #28a745;
     outline: none;
     box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);

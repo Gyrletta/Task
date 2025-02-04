@@ -80,6 +80,7 @@
         newTaskInput.classList.remove("input-error"); 
         addNewTask(newTaskContent);
         newTaskInput.value = "";
+        newTaskInput.focus();
     };
 
 
