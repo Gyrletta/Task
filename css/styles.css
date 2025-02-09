@@ -49,6 +49,8 @@ form .js-newTask {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-right: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+
 }
 
 form .js-newTask:focus {
@@ -65,10 +67,13 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+
 }
 
 form button:hover {
     background-color: #218838;
+    transform: scale(1.05);
 }
 
 .js-buttons-container {
@@ -80,6 +85,10 @@ form button:hover {
     align-items: center;
 }
 
+.js-buttons-container button:first-child {
+    margin-left: auto;
+}
+
 .js-buttons-container button {
     background: none;
     border: none;
@@ -87,10 +96,12 @@ form button:hover {
     font-size: 1rem;
     cursor: pointer;
     text-decoration: underline;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .js-buttons-container button:hover {
     color: #006d6b; 
+    transform: scale(1.05);
 }
 
 
@@ -129,6 +140,7 @@ li .js-remove {
     align-items: center;
     justify-content: center;
     font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 li .js-done {
@@ -139,6 +151,7 @@ li .js-done {
 
 li .js-done:hover {
     background-color: #218838;
+    transform: scale(1.05);
 }
 
 li .js-remove {
@@ -148,6 +161,7 @@ li .js-remove {
 
 li .js-remove:hover {
     background-color: darkred;
+    transform: scale(1.05);
 }
 
 li .js-remove img,
@@ -161,6 +175,7 @@ li .js-done img {
     border: 1px solid gray;
     background-color: #f0f0f0;
     box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .input-error:focus {
