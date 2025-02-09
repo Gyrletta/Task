@@ -71,6 +71,28 @@ form button:hover {
     background-color: #218838;
 }
 
+.js-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.js-buttons-container button {
+    background: none;
+    border: none;
+    color: teal;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.js-buttons-container button:hover {
+    color: #006d6b; 
+}
+
 
 ul {
     list-style: none;

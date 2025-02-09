@@ -3,33 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista Zadan</title>
+    <title>Lista Zadań</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
-    <script src="js/script.js"defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
-    <body>
-        <div class="container">
-            <h1>Lista zadań</h1>
-            <form class="js-form">
-                <input class="js-newTask" placeholder="Dodaj nowe zadanie...">
-                <button type="submit">Dodaj</button>
-            </form>
-            <div class="js-buttons-container" style="display: none;">
-                <button class="js-hide-done">Ukryj ukończone</button>
-                <button class="js-mark-all-done">Ukończ wszystkie</button>
-            </div>
-            <ul class="js-tasks"></ul>
+    <div class="container">
+        <h1>Lista zadań</h1>
+        <form class="js-form">
+            <input class="js-newTask" placeholder="Dodaj nowe zadanie...">
+            <button type="submit">Dodaj</button>
+        </form>
+        
+        <div class="js-buttons-container" style="display: none;">
+            <button class="js-hide-done">Ukryj ukończone</button>
+            <button class="js-mark-all-done">Ukończ wszystkie</button>
         </div>
-        <script src="script.js"></script>
-    </body>
+        
+        <ul class="js-tasks"></ul>
+    </div>
     
 </body>
 </html>
