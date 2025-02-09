@@ -1,31 +1,28 @@
 {
-    const tasks = [
-        {
-            content: "Ugotuj obiad",
-            done: false,
-        },
-        {
-            content: "Zrób lekcje",
-            done: true,
-        },
-    ];
-
-    const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-            done: false,
-        });
-
-        render();
-    };
+    let tasks = [];
 
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
+        tasks = [
+            ...tasks.splice(0, taskIndex),
+            ...tasks.splice(taskIndex + 1),
+        ];
         render();
     };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            {
+                ...tasks[taskIndex],
+                done: !tasks[taskIndex].done,
+            },
+            ...tasks.slice(tasksIndex + 1),
+        ];
+        render();
+    };
+
+    const addNewTask = (newTaskContent) => {
+        tasks = [...tasks, { content: newTaskContent}];
         render();
     };
 
