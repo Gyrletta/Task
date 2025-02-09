@@ -16,13 +16,23 @@
                 ...tasks[taskIndex],
                 done: !tasks[taskIndex].done,
             },
-            ...tasks.slice(tasksIndex + 1),
+            ...tasks.slice(taskIndex + 1),
         ];
         render();
     };
 
     const addNewTask = (newTaskContent) => {
-        tasks = [...tasks, { content: newTaskContent}];
+        tasks = [...tasks, { content: newTaskContent, done: false }];
+        render();
+    };
+
+    const markAllTasksDone = () => {
+        tasks = tasks.map(task => ({ ...task, done: true }));
+        render();
+    };
+
+    const toggleHideDoneTaks = () => {
+        hideDoneTasks = !hideDoneTasks;
         render();
     };
 
@@ -42,12 +52,17 @@
                 toggleTaskDone(index);
             });
         });
-    }
+
+    };
+
+    
 
     const render = () => {
         let htmlString = "";
 
         for(const task of tasks) {
+            if (hideDoneTasks && task.done) continue;
+
             htmlString += `
             <li${task.done ? " style=\"text-decoration: line-through\"" : ""}>
                 ${task.content}
@@ -58,6 +73,17 @@
         };
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+
+
+        const buttonsContainer = document.querySelector(".js-buttons-container");
+        const allTasksDone = tasks.every(task => task.done);
+
+        if (tasks.length > 0) {
+            buttonsContainer.style.display = "block"; 
+            document.querySelector(".js-mark-all-done").style.display = allTasksDone ? "none" : "inline-block";
+        } else {
+            buttonsContainer.style.display = "none"; 
+        };
 
         bindEvents();
     };
@@ -72,7 +98,7 @@
         if (newTaskContent === "") {
             newTaskInput.classList.add("input-error"); 
             return;
-        }
+        };
     
         newTaskInput.classList.remove("input-error"); 
         addNewTask(newTaskContent);
@@ -85,8 +111,10 @@
         render();
 
         const form = document.querySelector(".js-form");
-
         form.addEventListener("submit", onFormSubmit);
+
+        document.querySelector(".js-hide-done").addEventListener("click", toggleHideDoneTasks);
+        document.querySelector(".js-mark-all-done").addEventListener("click", markAllTasksDone);
     };
 
     init();
