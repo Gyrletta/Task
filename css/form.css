@@ -1,0 +1,36 @@
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form .js-newTask {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+
+}
+
+form .js-newTask:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+
+.input-error {
+    border: 1px solid gray;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-error:focus {
+    outline: none;
+    border: 1px solid #999;
+}

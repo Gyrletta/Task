@@ -1,0 +1,79 @@
+
+
+form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+
+}
+
+form button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.js-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.js-buttons-container button:first-child {
+    margin-left: auto;
+}
+
+
+.js-buttons-container button {
+    background: none;
+    border: none;
+    color: teal;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.js-buttons-container button:hover {
+    color: #006d6b; 
+    transform: scale(1.05);
+}
+
+
+li .js-done,
+li .js-remove {
+    width: 30px;
+    height: 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+li .js-done:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+li .js-remove {
+    background-color: red;
+    order: 1;
+}
+
+li .js-remove:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}

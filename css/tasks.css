@@ -1,0 +1,35 @@
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+li .task-content {
+    flex-grow: 1;
+    margin-right: 10px;
+    word-wrap: break-word;
+}
+
+li .js-done {
+    background-color: #28a745;
+    margin-right: 10px;
+    order: -1;
+}
+
+li .js-remove img,
+li .js-done img {
+    width: 20px;
+    height: 20px;
+}
