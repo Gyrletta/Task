@@ -65,10 +65,12 @@
             if (hideDoneTasks && task.done) continue;
 
             htmlString += `
-            <li${task.done ? " style=\"text-decoration: line-through\"" : ""}>
+            <li>
+            <span class="task-content" ${task.done ? 'style="text-decoration: line-through;"' : ""}>
                 ${task.content}
-                <button class="js-done"> ✅</button>
-                <button class="js-remove">🗑️</button>
+            </span>
+            <button class="js-done">${task.done ? "✔" : ""}</button>
+            <button class="js-remove">🗑️</button>
             </li>
             `;
         };
