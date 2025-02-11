@@ -22,14 +22,14 @@ li .task-content {
     word-wrap: break-word;
 }
 
-li .js-done {
+li .done {
     background-color: #28a745;
     margin-right: 10px;
     order: -1;
 }
 
-li .js-remove img,
-li .js-done img {
+li .remove img,
+li .done img {
     width: 20px;
     height: 20px;
 }

@@ -42,8 +42,8 @@ body {
         margin-bottom: 15px;
     }
 
-    li .js-done,
-    li .js-remove {
+    li .done,
+    li .remove {
         width: 40px;
         height: 40px;
         font-size: 20px;
@@ -67,8 +67,8 @@ body {
         font-size: 0.9rem;
     }
 
-    li .js-done,
-    li .js-remove {
+    li .done,
+    li .remove {
         width: 35px;
         height: 35px;
         font-size: 18px;

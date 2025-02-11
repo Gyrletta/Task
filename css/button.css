@@ -16,7 +16,7 @@ form button:hover {
     transform: scale(1.05);
 }
 
-.js-buttons-container {
+.buttons-container {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
@@ -25,12 +25,12 @@ form button:hover {
     align-items: center;
 }
 
-.js-buttons-container button:first-child {
+.buttons-container button:first-child {
     margin-left: auto;
 }
 
 
-.js-buttons-container button {
+.buttons-container button {
     background: none;
     border: none;
     color: teal;
@@ -40,14 +40,14 @@ form button:hover {
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
-.js-buttons-container button:hover {
+.buttons-container button:hover {
     color: #006d6b; 
     transform: scale(1.05);
 }
 
 
-li .js-done,
-li .js-remove {
+li .done,
+li .remove {
     width: 30px;
     height: 30px;
     background-color: #28a745;
@@ -63,17 +63,17 @@ li .js-remove {
 }
 
 
-li .js-done:hover {
+li .done:hover {
     background-color: #218838;
     transform: scale(1.05);
 }
 
-li .js-remove {
+li .remove {
     background-color: red;
     order: 1;
 }
 
-li .js-remove:hover {
+li .remove:hover {
     background-color: darkred;
     transform: scale(1.05);
 }
